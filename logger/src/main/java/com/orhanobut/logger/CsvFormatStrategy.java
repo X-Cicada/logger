@@ -67,10 +67,10 @@ public class CsvFormatStrategy implements FormatStrategy {
     builder.append(tag);
 
     // message
-    if (message.contains(NEW_LINE)) {
-      // a new line would break the CSV format, so we replace it here
-      message = message.replaceAll(NEW_LINE, NEW_LINE_REPLACEMENT);
-    }
+//     if (message.contains(NEW_LINE)) {
+//       // a new line would break the CSV format, so we replace it here
+//       message = message.replaceAll(NEW_LINE, NEW_LINE_REPLACEMENT);
+//     }
     builder.append(SEPARATOR);
     builder.append(message);
 
